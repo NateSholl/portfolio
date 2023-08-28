@@ -22,12 +22,12 @@ clean-venv:
 .PHONY: clean-venv
 
 check-lint: $(PYTHON_VENV_ROOT)
-	$(PYTHON_VENV_BIN)/isort --skip-gitignore --check-only nate-site
-	$(PYTHON_VENV_BIN)/ruff check nate-site
+	$(PYTHON_VENV_BIN)/isort --skip-gitignore --check-only nate_site
+	$(PYTHON_VENV_BIN)/ruff check nate_site
 
 apply-lint: $(PYTHON_VENV_ROOT)
-	$(PYTHON_VENV_BIN)/isort -v --skip-gitignore nate-site
-	$(PYTHON_VENV_BIN)/black nate-site
-	$(PYTHON_VENV_BIN)/ruff check nate-site
+	$(PYTHON_VENV_BIN)/isort -v --skip-gitignore nate_site
+	$(PYTHON_VENV_BIN)/black nate_site
+	$(PYTHON_VENV_BIN)/ruff check nate_site
 
 .PHONY: check-lint apply-lint
