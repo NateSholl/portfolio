@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container-lg">
+
+    <div class="row align-items-center flex-md-row-reverse">
+
+      <div class="col-sm-6">
+          <img src="{{ url_for('static', filename='ppod_scte.png') }}" class="d-block rounded-3 img-fluid shadow-lg" width="700" height="500" loading="lazy" >
+      </div>
+
+      <div class="col-sm-6">
+        <div class="container text-center py-3">
+            <h1 class="display-3 fw-bold lh-1">DevOps Engineer</h1>
+            <h3>Comcast</h3>
+            <p>February 2023 - Present</p>
+        </div>
+        <div class="accordion" id="accordionExampleComcast">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneComcast" aria-expanded="false" aria-controls="collapseOneComcast">
+                vCMTS and Ops
+              </button>
+            </h2>
+            <div id="collapseOneComcast" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                As a tier 3 RPHY engineer on the Ops team, I was directly responsible for the RPD (~120,000) units within the NGAN (Next Generation Access Network) vCMTS network. Because of this, I became very adept at spotting physical issues along the transmission path, this included analyzing Docsis carriers on the signal level for any noise issues, missing QAMs, etc. Amongst this I also gained a broad understanding of the features of vCMTS and the different virtualized aspects of that go on under the hood.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoComcast" aria-expanded="false" aria-controls="collapseTwoComcast">
+                Python as an Ops Engineer
+              </button>
+            </h2>
+            <div id="collapseTwoComcast" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Because I love python and automation, I set out on the endeavor of upgrading my team's tooling and created a Pip installable, command line tool. This tool included abstract base models of an RPD object which allowed for the different vendors and model types to be implemented easily. Also developed was a prometheus asynchronous querying tool that could be spooled up or down to reach ~200 requests per <strong>second</strong>. <br><br> It's worth noting that many devops concepts were included with this package on the development side, such as: symantic version, CI/CD pipeline utilizing GHA with unit tests & linting, automatic deployment to GitHub Pages, and auto tagging and artifact generation. I also utilized Sphinx to auto generate documentation for all docstrings within the functions / classes / methods that I created.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeComcast" aria-expanded="false" aria-controls="collapseThreeComcast">
+                 Network Automation
+              </button>
+            </h2>
+            <div id="collapseThreeComcast" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Comcast automates as much as they possibly can, I was directly involved in this process. I would create alerts utilizing their telemetry stack and remediations that would hopefully 'self-heal' any easily caught situations. Amongst that I also was responsible for monitoring and reporting on their deployment Ansible pipelines.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center py-1">
+          </p>Python - Kubernetes - Linux - Distrubuted Access Networking - Cisco - Juniper - GHA - Ansible - Concourse - AWS Lambda - AWS Step Functions</p>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row align-items-center flex-md-row-reverse">
+
+      <div class="col-sm-6">
+          <img src="{{ url_for('static', filename='spectrum_router.jpg') }}" class="d-block rounded-3 img-fluid shadow-lg" width="700" height="500" loading="lazy">
+      </div>
+
+      <div class="col-sm-6">
+        <div class="container text-center py-3">
+            <h1 class="display-3 fw-bold lh-1">Network Engineer</h1>
+            <h3>Spectrum</h3>
+            <p>February 2022 -> February 2023</p>
+        </div>
+        <div class="accordion" id="accordionExampleSpectrum">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneSpectrum" aria-expanded="false" aria-controls="collapseOneSpectrum">
+                Embedded Firmware Development
+              </button>
+            </h2>
+            <div id="collapseOneSpectrum" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                My team was directly responsible for the development of the firmware on Spectrum's CPE routers. This created a strong familiarity with many routing concepts as well as Linux concepts. This also allowed me to develop a feel on what a tech stack looks like.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoSpectrum" aria-expanded="false" aria-controls="collapseTwoSpectrum">
+                Integration Testing Lab
+              </button>
+            </h2>
+            <div id="collapseTwoSpectrum" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  In order to deploy our above developed firmware we needed an automated testing environment that would enable the developers to quickly test their code on a real physical device. That's where the integration lab came in. We deployed ansible configured Gitlab runners on RPI devices networked together that would run a python test suite on an actual Spectrum router. This allowed the developers to be able to run nightly cron testing on their code as well as giving them the ability to instantly test their code.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeSpectrum" aria-expanded="false" aria-controls="collapseThreeSpectrum">
+                  Monitoring and Health Checking
+              </button>
+            </h2>
+            <div id="collapseThreeSpectrum" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  The above created test setups would eventually go down so we needed a way to monitor them. Utilizing PostgresQL and Flask we created an in-house monitoring system and health check system that would alert us when a setup was deemed "unhealthy". This same tool was also pip installable so that on demand health checks could be run at command line. This created more productive engineers within the lab as they no longer had to wait for tests to fail in order to see when a setup was deemed unhealthy.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center py-1">
+          </p>Python - Gitlab - Linux - CI/CD - Ansible - Flask - PostgresQL - AWS EC2 - AWS Route 53 </p>
+        </div>
+      </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

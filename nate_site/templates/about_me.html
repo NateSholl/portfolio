@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-sm-4 text-center">
+<!--            <h1 class="my-2 display-5 text-monospace">Brazilian Jiu Jitsu</h1>-->
+            <img src="{{ url_for('static', filename='bjj.jpg') }}" class="rounded-4 shadow-lg img-fluid" alt="BJJ" width="500" loading="lazy">
+        </div>
+        <div class="col-sm-4 text-center">
+<!--            <h1 class="my-2 display-5 text-monospace">The Colorado Trail</h1>-->
+            <img src="{{ url_for('static', filename='co_trail_finish.png') }}" class="rounded-4 shadow-lg img-fluid" alt="CO_trail_finish" width="500" loading="lazy">
+        </div>
+        <div class="col-sm-4 text-center">
+<!--            <h1 class="my-2 display-5 text-monospace">Music Production</h1>-->
+            <img src="{{ url_for('static', filename='black_box.jpg') }}" class="rounded-4 shadow-lg img-fluid" alt="Black_box" width="500" loading="lazy">
+        </div>
+    </div>
+    <div class="container-md mt-4 p-4 text-center">
+        <p class="my-2 display-6 text-monospace">I've always considered myself a very impulsive person, for better or worse. Luckily this has led me to develop a lot of different passions.</p><br>
+        <p class="my-2 text-monospace">My most sought after hobby is music production. I'm obsessed with bending waves to create strange and otherworldly timbres. The engineering pursuit of creating a perfect room within 3d wave space mixed with the onslaught of circuitry hidden inside plastic boxes all fuse together to create an outlet perfect for the ADHD mind.<br> The emotional content of it is deep to me as well. The ability to transcend language and create a feeling that resonates with a large body of individuals is unmatched.</p>
+        <p class="my-4 display-6 text-monospace">I also enjoy the outdoors and the challenges that come with it.</p>
+        <p class="my-2 text-monospace">In 2021 inbetween careers as a carpenter trying to transform into a network engineer, I had the fortunate opportunity to thru-hike the Colorado trail. It took me 33 days and was one of the most liberating experiences I've had to date. Surrounded by beauty and being right in the center of a treasure trove of different people, the trail provided for me a different outlook on what it means to face a challenge. All my life I thought it would be impossible for me to complete the CO trail but that expectation was subverted the moment I tried. This outlook is something I bring with me on a day-to-day basis. It's the same outlook that sparked my pursuit into technology as a career. I can do the things that are impossible, all it takes is time and effort.</p>
+        <p class="my-4 display-6 text-monospace">Staying active is critical to my mental health</p>
+        <p class="my-2 text-monospace">I do a lot of things to keep my blood pumping, whether it's rock climbing, dirt biking or Brazilian Jiu Jitsu. I enjoy the endorphins of grind.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

@@ -31,3 +31,15 @@ apply-lint: $(PYTHON_VENV_ROOT)
 	$(PYTHON_VENV_BIN)/ruff check nate_site
 
 .PHONY: check-lint apply-lint
+
+dev-start: $(PYTHON_VENV_ROOT)
+	$(PYTHON_VENV_BIN)/flask --app nate_site --debug run
+
+prod-start:
+	docker-compose up -d --build
+
+prod-stop:
+	docker-compose down
+
+.PHONY: prod-start prod-stop dev-start
+
